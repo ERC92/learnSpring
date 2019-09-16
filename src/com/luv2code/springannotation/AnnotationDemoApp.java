@@ -10,6 +10,7 @@ public class AnnotationDemoApp {
 		Coach theCoach = context.getBean("tennisCoach", Coach.class);
 		Coach badCoach = context.getBean("badMint", Coach.class);
 		Coach hockCoach = context.getBean("hockeyCoach", Coach.class);
+		Coach tt = context.getBean("tableTennisCoach", Coach.class);
 		
 		System.out.println(theCoach.getDailyWorkout());
 		System.out.println(theCoach.getDailyFortune());
@@ -19,9 +20,11 @@ public class AnnotationDemoApp {
 		System.out.println("##########");
 		System.out.println(hockCoach.getDailyWorkout());
 		System.out.println(hockCoach.getDailyFortune());
+		System.out.println("##########");
+		System.out.println(tt.getDailyWorkout());
+		System.out.println(tt.getDailyFortune());
 		
 		context.close();
-		
 	}
 
 }
