@@ -21,6 +21,7 @@ public class AnnotationDemoApp {
 		System.out.println(hockCoach.getDailyFortune());
 		
 		context.close();
+		
 	}
 
 }
